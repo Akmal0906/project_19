@@ -14,26 +14,101 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Flutter course'),
+        title: Text('Messages'),
       ),
-      drawer: Drawer(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              height: 100,
-              color: Colors.blue,
-              child: Column(
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(25),
+                child: CircleAvatar(
+          backgroundImage: AssetImage('assets/images/ic_image1.jpg'),
+                  radius: 30,
+                ),
+              ),
+              SizedBox(width: 10,),
+              Text('Laurent     20:18'),
 
+              Column(
+
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Image( image:
+                  SizedBox(height: 40,width: 15,),
+                  Container(
 
-                  AssetImage("assets/images/ic_image1.jpg")),
+                    child: Text('How'),
+                  ),
                 ],
               ),
-            ),
-          ],
-        ),
+              SizedBox(width: 100,),
+              Icon(Icons.arrow_forward_ios_sharp),
+            ],
+          ),
+
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(25),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/images/ic_image1.jpg'),
+                  radius: 30,
+                ),
+              ),
+              SizedBox(width: 10,),
+              Text('Laurent     20:18'),
+              SizedBox(width: 130,),
+              Icon(Icons.arrow_forward_ios_sharp),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(25),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/images/ic_image1.jpg'),
+                  radius: 30,
+                ),
+              ),
+              SizedBox(width: 10,),
+              Text('Laurent     20:18'),
+              SizedBox(width: 130,),
+              Icon(Icons.arrow_forward_ios_sharp),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(25),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/images/ic_image1.jpg'),
+                  radius: 30,
+                ),
+              ),
+              SizedBox(width: 10,),
+              Text('Laurent     20:18'),
+              SizedBox(width: 130,),
+              Icon(Icons.arrow_forward_ios_sharp),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(25),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/images/ic_image1.jpg'),
+                  radius: 30,
+                ),
+              ),
+              SizedBox(width: 10,),
+              Text('Laurent     20:18'),
+              SizedBox(width: 130,),
+              Icon(Icons.arrow_forward_ios_sharp),
+            ],
+          ),
+
+        ],
       ),
     );
   }
